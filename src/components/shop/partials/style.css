@@ -1,0 +1,134 @@
+.fixed{
+  background-color: #5CB85C;
+}
+.userDropdown {
+  display: none;
+  z-index: 22;
+}
+
+.userDropdownBtn:hover .userDropdown {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+.my-div {
+  transition: transform 0.3s ease;
+} 
+
+.my-div.hidden {
+  transform: translateY(-100%);
+}
+.containerMenu{
+  border-top: 1px solid white;
+  background-color: white;
+  color:  black;
+  justify-content: center;
+}
+.menu{
+  transition: all 0.5s;
+  cursor: pointer;
+  display:  flex;
+  text-transform: uppercase;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu:hover{
+  background-color: #5CB85C;
+}
+.list{
+  background-color: #5CB85C;
+  margin-left: -20px;
+  padding: 15px;
+  
+}
+.ant-dropdown-menu{
+ border-radius:0;
+}
+.ant-dropdown-menu-item{
+ height: 70px;
+}
+.ant-dropdown-menu-title-content{
+  font-size: 10px;
+}
+.ant-dropdown-menu-title-content:hover{
+  color: #0A923C;
+}
+/*dropdown*/
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #5CB85C;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 22;
+  top: 100%;
+  left: 0;
+  transform: translateY(20px); /* Đẩy dropdown menu xuống 20px */
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; /* Hiệu ứng transition */
+}
+.list>.dropdown-content{
+  background-color: #f2f2f2;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  width: 120%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Đặt dropdown menu trở lại vị trí ban đầu */
+}
+
+.menu.list:hover {
+  background-color: #5CB85C;
+  cursor: pointer;
+}
+
+.menu.list:hover {
+  background-color: #5CB85C; /* Màu nền mới khi hover vào li */
+  cursor: pointer;
+}
+.dropdown-content a:hover {
+  background-color: #f2f2f2; /* Màu nền xám nhạt khi hover vào */
+  color: #5CB85C; /* Màu chữ xanh khi hover vào */
+}
+/* footer */
+.footer-container{
+  margin-top: 40px;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: #e6ece9;
+  color: #788a7f;
+}
+.footer-top{
+  height: 60px;
+  width: 100%;
+  background-color: #0A923C;
+}
+.title-footer{
+  color: black;
+}
+.footer-address li{
+  margin-top: 40px;
+}
+.footer-account ul li{
+  margin-top: 20px;
+}
